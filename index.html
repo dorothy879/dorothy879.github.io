@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="eng">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport>"
+    <meta http.equiv="X-UA-Compatible" content="IE-edge">
+    content="width-device-width,initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet"href="style.css">
+    <link rel="stylesheet" href="svgs/brands/all.css">
+    
+</head>
+<body>
+    <header class="header">
+        <a href="a" class="logo"><span>Dorothy</span></a>
+        <nav class="navbar">
+            <a href="a" class="active">My Portfolio</a>
+            <a href="a">Services</a>
+            <a href="a">Experience</a>
+            <a href="a">Projects</a>
+            <a href="a">Education</a>
+        </nav>
+
+        <a href="a" class="contact">Contact Me</a>
+    </header>
+    <section class="home">
+            <div class="home-content">
+                <h3>Hi</h3>
+                <h1>I'm a<span id="dynamic-text">Frontend Developer</span></h1>
+
+            <p>As a web developer, I specialize in building and maintaining websites and web applications.
+                 My skill set includes working with HTML, CSS, JavaScript, and various frameworks to create user-friendly, responsive designs. 
+                 I focus on optimizing functionality and performance to enhance the overall user experience.
+                 As a software developer, I design, develop, and test software solutions that solve real-world problems.
+                I am proficient in programming languages such as Python, and C++, and have experience in both front-end development.
+                I strive to create efficient, scalable, and maintainable code.
+                As a frontend developer, I create visually appealing and interactive user interfaces. 
+                I use modern tools like JavaScript, and CSS frameworks to ensure a seamless and responsive experience across devices. 
+                My goal is to translate design concepts into functional and dynamic websites that engage users.
+              </p>
+        
+            <div class="btn-box">
+                <button class="btn-1">Hire Me</button>
+                <button class="btn-2">Experience</button>
+        </div>    
+    </div>
+    <div class="img-box">
+        <img src="myphoto.jpg"alt="">
+    </div>
+    </section>
+    <section class="about">
+
+        <div class="about-img">
+            <img src="myphoto.jpg" alt="">
+        </div>
+        
+        <div class="about-content">
+            <h2 class="heading">About<span> Me</span></h2>
+
+            <p>I am a recent Computer Science graduate with a strong passion
+                for learning and personal growth. My interests include hardware maintainance, 
+                web development and software development
+               and i am eager to apply my knowledge in practical and real world scenarios.
+                I am adaptable, motivated and open to exploring diverse roles that allow me to 
+                develop new skills and gain experience.
+               With a solid academic foundation and hands on internship experience, i am excited
+                to take on challenges that will enhance my technical abilities while contributing to the success of the team</p>
+
+            <a href="a" class="btn-2">Experience</a>
+    </div>        
+    </section>
+
+    <section class="contact-form">
+        <h2 class="contact-me">Contact<span>Me</span></h2>
+
+        <form action="a">
+            <div class="input-box">
+            <input type="text" placeholder="Full Name">
+            <input type="email"
+            placeholder="Email">
+            </div>
+
+            <div class="input-box">
+                <input type="number" placeholder="Phone Number">
+                <input type="text"
+                placeholder="Subject">
+
+            <textarea name="" id="" cols="30"
+            rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message"
+            class="btn-1">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-whatsapp'></i></a>
+            <a href="#"><i class='bx bxl-tiktok'></i></a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="a">FAQ</a>
+            </li>
+            <li>
+                <a href="a">Services</a>
+            </li>
+            <li>
+                <a href="a">About Me</a>
+            </li>
+            <li>
+                <a href="a">Contact</a>
+            </li>
+            <li>
+                <a href="a">Privacy Policy</a>
+            </li>
+        </ul>
+
+        <p class="copyright">2024 Dorothy | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        const textArray = ["Frontend Developer", "Web Developer", "Software Developer"];
+        let currentIndex = 0;
+        let currentCharIndex = 0;
+        let currentText = "";
+        let isDeleting = false;
+        const typingSpeed = 150;
+        const deletingSpeed = 100;
+        const pauseDelay = 1000;
+    
+        function type() {
+            const dynamicText = document.getElementById("dynamic-text");
+            if (isDeleting) {
+                currentText = textArray[currentIndex].substring(0, currentCharIndex--);
+            } else {
+                currentText = textArray[currentIndex].substring(0, currentCharIndex++);
+            }
+    
+            dynamicText.textContent = currentText;
+    
+            if (!isDeleting && currentCharIndex === textArray[currentIndex].length) {
+                isDeleting = true;
+                setTimeout(type, pauseDelay);
+            } else if (isDeleting && currentCharIndex === 0) {
+                isDeleting = false;
+                currentIndex = (currentIndex + 1) % textArray.length;
+                setTimeout(type, 500);
+            } else {
+                setTimeout(type, isDeleting ? deletingSpeed : typingSpeed);
+            }
+        }
+    
+        window.onload = function() {
+            type();
+        };
+    </script>
+    
+      
+</body>
+</html>
