@@ -152,12 +152,9 @@ img {
     background: black;
     flex-direction: column; 
 }
-.about-img img{
-    position: relative;
-    width: 550px;
-    box-shadow: 0 0 25px orangered,
-                0 0 50px orangered;
-    border-radius: 50%;
+
+.about-content {
+    max-width: 800px; /* Set a max-width for the text area */
 }
 .about-content h2{
     text-align: left;
