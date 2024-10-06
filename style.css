@@ -60,6 +60,7 @@ span{
     gap: 7em;
     padding: 30px 12px 0;
     flex-direction: column; 
+    margin-top: 100px;
 }
 .homecontent{
     max-width: 800px;
@@ -123,8 +124,10 @@ img {
 }
 
 .img-box img {
-    width: 80%; /* Percentage-based width for flexibility */
-    max-width: 300px; /* Optional max width to limit size */
+    width: 100%; /* Allow it to use the full container width */
+    max-width: 550px; /* Adjust max width like in the about image */
+    border-radius: 50%; /* To make it circular like in the about section */
+    box-shadow: 0 0 25px orangered, 0 0 50px orangered; /* Optional shadow effect */
 }
     
 }
@@ -273,6 +276,7 @@ img {
         flex-direction: column;
         text-align: center;
         padding: 20px;
+        margin-top: 100px;
     }
 
     .home-content h1 {
@@ -286,6 +290,9 @@ img {
 
     .img-box img {
         width: 250px; /* Adjust the image size for mobile */
+        width: 80%; /* Ensure it's large enough on mobile */
+        max-width: 300px; /* Optional max width */
+        border-radius: 50%; /* Circular*/
     }
 
     .btn-box {
@@ -299,6 +306,10 @@ img {
 
     .about-img img {
         width: 300px; /* Smaller image for mobile */
+        width: 80%; /* Ensure it's large enough on mobile */
+        max-width: 300px; /* Optional max width */
+        border-radius: 50%; /* Circular on mobile */
+    }
     }
 
     .navbar a {
