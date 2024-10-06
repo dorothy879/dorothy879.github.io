@@ -59,6 +59,7 @@ span{
     align-items: center;
     gap: 7em;
     padding: 30px 12px 0;
+    flex-direction: column; 
 }
 .homecontent{
     max-width: 800px;
@@ -114,9 +115,17 @@ span{
     background-color: white;
     color:orangered;
 }
-.img-box img{
-    border-radius: 50%;
-    width: 470px;
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto; /* Maintains the aspect ratio */
+}
+
+.img-box img {
+    width: 80%; /* Percentage-based width for flexibility */
+    max-width: 300px; /* Optional max width to limit size */
+}
     
 }
 
@@ -138,6 +147,7 @@ span{
     padding: 12% 8%;
     gap: 10cm;
     background: black;
+    flex-direction: column; 
 }
 .about-img img{
     position: relative;
@@ -255,6 +265,48 @@ span{
     }
     50% {
         border-color: orangered;
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .home-content h1 {
+        font-size: 36px;
+    }
+
+    .home-content p {
+        font-size: 16px;
+        margin: 15px 0;
+    }
+
+    .img-box img {
+        width: 250px; /* Adjust the image size for mobile */
+    }
+
+    .btn-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+
+    .about-img img {
+        width: 300px; /* Smaller image for mobile */
+    }
+
+    .navbar a {
+        font-size: 14px; /* Smaller font for navigation links */
+    }
+
+    .header {
+        padding: 10px 5%;
     }
 }
 
