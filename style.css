@@ -242,7 +242,7 @@ img {
     text-align: center;
 }
 
-.footer ul li {
+.footer ul li a：{
     display: inline-block;
     padding: 0 15px;
     text-align: center;
