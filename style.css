@@ -218,6 +218,23 @@ img {
     font-weight: bold;
     text-align: center; /* Center the text, if desired */
 }
+/* Centering section titles */
+h2 {
+    text-align: center;
+}
+
+/* Justifying paragraphs and adding padding */
+.section-paragraph {
+    text-align: justify; /* Justifies text */
+    margin: 0 20px; /* Adds space on the left and right */
+    padding: 10px; /* Optional: Adds some padding within the paragraph box */
+}
+
+/* Applying styles specifically to each section */
+.services, .education, .experience, .projects {
+    padding: 20px; /* Add padding to each section for better spacing */
+    margin: 20px; /* Add margin to create space between sections */
+}
 .contact-form h2{
     text-align: center;
     margin-top: 3em;
