@@ -160,7 +160,7 @@ img {
     max-width: 800px; /* Set a max-width for the text area */
 }
 .about-content h2{
-    text-align: left;
+    text-align: center;
     color: white;
     font-size: 42px;
 }
