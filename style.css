@@ -118,6 +118,7 @@ span{
 .btn-2:hover{
     background-color: white;
     color:orangered;
+     border: 2px solid orangered;
 }
 
 img {
