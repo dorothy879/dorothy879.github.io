@@ -192,7 +192,34 @@
             type();
         };
     </script>
-    
+    <script>
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Basic form validation
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    if (name && email && message) {
+        // Here, you can send the data to your server or WhatsApp API
+        const whatsappMessage = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`;
+        const whatsappLink = `https://api.whatsapp.com/send?text=${encodeURIComponent(whatsappMessage)}`;
+
+        // Redirect to WhatsApp with the message
+        window.open(whatsappLink, '_blank');
+
+        // Show a confirmation message
+        alert("Your message has been sent! Thank you for contacting me.");
+        
+        // Reset the form fields
+        document.getElementById("contact-form").reset();
+    } else {
+        alert("Please fill out all fields.");
+    }
+});
+</script>
+
       
 </body>
 </html>
