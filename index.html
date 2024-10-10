@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="eng">
-<head>
+ <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport content="width=device-width, initial-scale=1.0">
+    <meta http.equiv="X-UA-Compatible" content="IE-edge">
+    content="width-device-width,initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
     <header class="header">
@@ -17,74 +19,139 @@
             <a href="#experience">Experience</a>
             <a href="#education">Education</a>
         </nav>
-        <a href="#contact" class="contact">Contact Me</a>
-    </header>
 
+        <a href="#contact" class="contact">Contact Me</a>
+
+    </header>
+ 
     <section class="home">
-        <div class="home-content">
-            <h3>Hi</h3>
-            <h1>I'm a<span id="dynamic-text">Frontend Developer</span></h1>
-            <p>As a web developer, I specialize in building and maintaining websites and web applications...</p>
+            <div class="home-content">
+                <h3>Hi</h3>
+                <h1>I'm a<span id="dynamic-text">Frontend Developer</span></h1>
+
+            <p>I am a dedicated and versatile software developer with a strong focus on front-end development.
+                With a passion for creating intuitive, responsive, and visually engaging user interfaces, I have a solid foundation in HTML, CSS, and JavaScript, as well as experience with modern frameworks such as React and Angular. 
+                My background in software development allows me to approach projects with a full understanding of both the front-end and back-end, ensuring seamless functionality and performance. 
+                Eager to continuously learn and adapt to emerging technologies, I thrive in collaborative environments where innovation and problem-solving are key."
+              </p>
+        
             <div class="btn-box">
                 <a href="https://wa.me/+263775528540" class="btn-1" target="_blank">Hire Me</a>
-            </div>
-        </div>
-        <div class="img-box">
-            <img src="myphoto.jpg" alt="">
-        </div>
+               
+        </div>    
+    </div>
+    <div class="img-box">
+        <img src="myphoto.jpg"alt="">
+    </div>
     </section>
+    <section class="about"> 
+        <div class="about-content">
+            <h2 class="heading">About<span> Me</span></h2>
 
-    <!-- Other sections (About, Services, Projects, Experience, Education) -->
+            <p>I am a recent Computer Science graduate with a strong passion
+                for learning and personal growth. My interests include hardware maintainance, 
+                web development and software development
+               and i am eager to apply my knowledge in practical and real world scenarios.
+                I am adaptable, motivated and open to exploring diverse roles that allow me to 
+                develop new skills and gain experience.
+               With a solid academic foundation and hands on internship experience, i am excited
+                to take on challenges that will enhance my technical abilities while contributing to the success of the team</p>
+    </div>        
+    </section>
+<!-- Services Section -->
+<!-- Services Section -->
+<section id="services" class="services">
+    <h2>
+    <span class="black-text">Serv</span><span class="orangered-text">ices</span>
+</h2>
 
+   <p class="section-paragraph"> As a recent graduate with a degree in Computer Science, I am equipped with a strong foundation in IT and software development. 
+    I offer a range of services, including technical support, software troubleshooting, and basic programming assistance.
+    My goal is to provide reliable and efficient solutions that enhance user experiences and optimize operational performance.</p>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects">
+    <h2>
+    <span class="white-text">Proj</span><span class="orangered-text">ects</span>
+</h2>
+
+    <p class="section-paragraph" >For my final year project, I developed a Shona to English translator, showcasing my ability to apply programming skills to solve practical problems.
+     This project involved extensive research, coding, and user testing to ensure accuracy and functionality.
+     It not only strengthened my technical capabilities but also ignited my passion for developing software that bridges communication gaps.</p>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="experience">
+    <h2>
+    <span class="black-text">Experi</span><span class="orangered-text">ence</span>
+</h2>
+
+    <p class="section-paragraph" >I have completed a one-year internship at Truworths Limited, where I gained hands-on experience in IT support and system maintenance. 
+     During my internship, I worked closely with the IT team to troubleshoot software issues, assist with system upgrades, and ensure smooth operations of various IT services.
+     This experience has prepared me to tackle real-world challenges and contribute effectively to any IT department.</p>
+</section>
+
+<!-- Education Section -->
+<section id="education" class="education">
+    <h2>
+    <span class="white-text">Educa</span><span class="orangered-text">tion</span>
+</h2>
+
+    <p class="section-paragraph" >I graduated from Bindura University of Science Education with a degree in Computer Science. 
+     Throughout my studies, I gained extensive knowledge in various areas of IT, including software development, database management, and networking.
+     My academic journey has not only honed my technical skills but also fostered critical thinking and problem-solving abilities essential for success in the tech industry.</p>
+</section>
+
+</section>
     <section id="contact" class="contact-form">
         <h2 class="contact-me">Contact<span>Me</span></h2>
 
-        <!-- Corrected Form with input ids -->
         <form id="contact-form">
             <div class="input-box">
-                <input type="text" id="name" placeholder="Full Name" required>
-                <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="name" placeholder="Full Name">
+            <input type="email" id="email
+            placeholder="Email">
             </div>
 
             <div class="input-box">
                 <input type="number" id="phone" placeholder="Phone Number">
-                <input type="text" id="subject" placeholder="Subject">
-            </div>
+                <input type="text" id="subject"
+                placeholder="Subject">
 
-            <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-            <input type="submit" value="Send Message" class="btn-1">
+            <textarea name="" id="" cols="30"
+            rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message"
+            class="btn-1">
         </form>
-
-        <!-- Confirmation message div -->
-        <div id="confirmation-message" style="display: none; color: green; margin-top: 10px;"></div>
-
-        <!-- Contact info -->
-        <div class="contact-info">
-            <p><strong>Phone:</strong> +263775528540</p>
-            <p><strong>Email:</strong> dtakawira272@gmail.com</p>
-        </div>
+     <div id="confirmation-message" style="display: none; color: green; margin-top: 10px;"></div>
+     <div class="contact-info">
+        <p><strong>Phone:</strong> +263775528540</p>
+        <p><strong>Email:</strong> dtakawira272@gmail.com</p>
+    </div>
     </section>
 
     <footer class="footer">
-        <div class="social">
-            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
-        </div>
+    <!-- Social media icons container -->
+    <div class="social">
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
 
-        <ul class="list">
-            <li><a href="a">FAQ</a></li>
-            <li><a href="a">Services</a></li>
-            <li><a href="a">About Me</a></li>
-            <li><a href="a">Contact</a></li>
-            <li><a href="a">Privacy Policy</a></li>
-        </ul>
+    <!-- List of footer links -->
+    <ul class="list">
+        <li><a href="a">FAQ</a></li>
+        <li><a href="a">Services</a></li>
+        <li><a href="a">About Me</a></li>
+        <li><a href="a">Contact</a></li>
+        <li><a href="a">Privacy Policy</a></li>
+    </ul>
 
-        <p class="copyright">2024 Dorothy | All Rights Reserved</p>
-    </footer>
+    <p class="copyright">2024 Dorothy | All Rights Reserved</p>
+</footer>
 
-    <!-- Typing Effect Script -->
     <script>
         const textArray = ["Frontend Developer", "Web Developer", "Software Developer"];
         let currentIndex = 0;
@@ -94,7 +161,7 @@
         const typingSpeed = 150;
         const deletingSpeed = 100;
         const pauseDelay = 1000;
-
+    
         function type() {
             const dynamicText = document.getElementById("dynamic-text");
             if (isDeleting) {
@@ -102,9 +169,9 @@
             } else {
                 currentText = textArray[currentIndex].substring(0, currentCharIndex++);
             }
-
+    
             dynamicText.textContent = currentText;
-
+    
             if (!isDeleting && currentCharIndex === textArray[currentIndex].length) {
                 isDeleting = true;
                 setTimeout(type, pauseDelay);
@@ -116,34 +183,36 @@
                 setTimeout(type, isDeleting ? deletingSpeed : typingSpeed);
             }
         }
-
+    
         window.onload = function() {
             type();
         };
     </script>
+ <script>
+ document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the default form submission
 
-    <!-- Contact Form Script -->
-    <script>
-        document.getElementById("contact-form").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent the default form submission
+    // Basic form validation
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
 
-            // Get form values
-            const name = document.getElementById("name").value;
-            const email = document.getElementById("email").value;
-            const message = document.getElementById("message").value;
+    if (name && email && message) {
+        // Show a confirmation message in the designated HTML element
+        const confirmationMessage = document.getElementById("confirmation-message");
+        confirmationMessage.textContent = "Thank you for your message, " + name + "! I will get back to you soon.";
+        confirmationMessage.style.display = "block"; // Show the message
 
-            if (name && email && message) {
-                // Show confirmation message
-                const confirmationMessage = document.getElementById("confirmation-message");
-                confirmationMessage.textContent = "Thank you for your message, " + name + "! I will get back to you soon.";
-                confirmationMessage.style.display = "block"; // Show the message
-
-                // Clear the form fields
-                document.getElementById("contact-form").reset();
-            } else {
-                alert("Please fill out all required fields.");
-            }
-        });
-    </script>
+        // Reset the form fields
+        document.getElementById("contact-form").reset();
+    } else {
+        alert("Please fill out all fields.");
+    }
+});
+ </script>
+       
 </body>
 </html>
+
+
+HERES THE CODE, STILL NOT WORKING 
